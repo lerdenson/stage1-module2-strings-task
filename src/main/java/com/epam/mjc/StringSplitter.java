@@ -20,7 +20,7 @@ public class StringSplitter {
         for (String delimiter: delimiters) {
             ArrayList<String> list = new ArrayList<>();
             for (String r: res) {
-                list.addAll(Arrays.stream(r.split(delimiter)).toList());
+                list.addAll(Arrays.asList(r.split(delimiter)));
             }
             res = list;
         }
